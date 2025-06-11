@@ -1,0 +1,22 @@
+[build-system]
+requires = ["wheel", "meson>=1.4.0", "meson-python", "numpy"]
+build-backend = "mesonpy"
+
+[project]
+name = "badlands"
+version = "2.3"
+description = "TIN-based landscape evolution model"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "triangle",
+  "meshplex@git+https://github.com/kinnala/meshplex",
+  "numpy<2",
+  "six>=1.11.0",
+  "gFlex>=1.1.0",
+  "scikit-image>=0.15",
+  "pandas>=0.24",
+  "scipy>=1.2",
+  "h5py>=2.8.0",
+  "matplotlib>=3.0"
+]

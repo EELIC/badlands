@@ -1,0 +1,23 @@
+name: badlands
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy=1.21
+  - scipy=1.9.3
+  - pandas
+  - h5py
+  - scikit-image
+  - shapely
+  - cmocean
+  - pip
+  - pip:
+      - triangle
+      - gFlex>=1.1.0
+      - matplotlib==3.3.4
+      - plotly
+      - lavavu
+      - piglet
+      - pyvirtualdisplay
+      - descartes
+      - meshplex @ git+https://github.com/kinnala/meshplex
